@@ -1,0 +1,30 @@
+.venv/
+__pycache__/
+*.pyc
+state/
+.env
+.env.*
+!.env.example
+.DS_Store
+*.egg-info/
+
+# secrets — never commit
+API_KEYS.txt
+.env.template
+
+# local run clutter
+debug_mcp.log
+run_query_*.log
+usage.json
+scratch_crawl.py
+simulate_crawl.py
+simulate_mcp.py
+
+# gateway call-log database (size + logged prompt data)
+*.db
+*.sqlite
+*.sqlite3
+
+# course-provided LLM Gateway V3 — not my work; kept local, not redistributed.
+# See README "LLM Gateway (external dependency)" for how to obtain & run it.
+llm_gatewayV3/
