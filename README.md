@@ -2,10 +2,9 @@
 
 A goal-driven agent built from **four cognitive roles** — Memory, Perception,
 Decision, Action — communicating through **typed Pydantic contracts** at every
-boundary, backed by two support stores (Artifacts, the LLM Gateway V3) and a
-9-tool MCP server.
+boundary, backed by two support stores (Artifacts, the LLM Gateway) and a MCP server.
 
-The thesis of S6: a single LLM brain that must *decompose the goal, pick the
+The thesis: a single LLM brain that must *decompose the goal, pick the
 next action, and judge done-ness all at once* hits a ceiling on multi-goal
 queries. S6 splits that one overloaded call into narrow roles, each with a typed
 input, a typed output, and exactly one job.
@@ -20,7 +19,7 @@ input, a typed output, and exactly one job.
   Runs as a separate service on port 8101 (see below). Not redistributed in this
   repo; it is not my code.
 - **`mcp_server.py`** — the 9-tool MCP server *is* included for runnability, but
-  it too is course-provided scaffolding, not part of my contribution.
+  it too is external scaffolding, not part of my contribution.
 
 ## Architecture
 
